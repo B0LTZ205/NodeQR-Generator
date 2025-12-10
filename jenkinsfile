@@ -191,7 +191,7 @@ pipeline {
                     def scannerHome = tool 'SonarQube-Scanner'
                     withSonarQubeEnv('SonarQube-Scanner') {
                         sh "${scannerHome}/bin/sonar-scanner \
-                            -Dsonar.projectKey=chatapp \
+                            -Dsonar.projectKey=QRapp \
                             -Dsonar.sources=."
                     }
                 }
